@@ -1,0 +1,7 @@
+# Netlify serves the static export in /out from the site root (no base path).
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
