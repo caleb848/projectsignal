@@ -1,6 +1,6 @@
 # ProjectSignal
 
-**Live demo:** https://caleb848.github.io/projectsignal/
+**Live demo:** https://projectsignal-dashboard.netlify.app · [GitHub Pages mirror](https://caleb848.github.io/projectsignal/)
 
 A project health and creative operations dashboard exploring how teams can surface risks, dependencies, approval bottlenecks, resource constraints and launch readiness.
 
@@ -110,7 +110,8 @@ npm run build        # production build
 The app is a fully static export (`output: "export"`), so any static host works.
 
 - **GitHub Pages:** `npm run deploy` builds with the repo name as the base path and pushes the result to the `gh-pages` branch. Pages is set to deploy from that branch.
-- **Vercel / Netlify:** import the repo. No configuration is needed.
+- **Netlify:** `npm run deploy:netlify` builds and publishes to the Netlify site (requires the Netlify CLI, logged in). `netlify.toml` also supports Git-connected builds.
+- **Vercel:** import the repo. No configuration is needed.
 
 ### Project structure
 

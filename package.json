@@ -9,7 +9,8 @@
     "lint": "eslint",
     "validate": "tsx scripts/validate-data.ts",
     "typecheck": "tsc --noEmit",
-    "deploy": "bash scripts/deploy-pages.sh"
+    "deploy": "bash scripts/deploy-pages.sh",
+    "deploy:netlify": "rm -rf out && next build && netlify deploy --prod --dir out --no-build --site 7d879eca-7480-486a-a9e9-113edb0ee3dc"
   },
   "dependencies": {
     "clsx": "^2.1.1",
